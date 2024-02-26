@@ -21,3 +21,8 @@ hr.type-1 {
     border-color: #03071233;
     margin: 20px 0;
   }
+hr.type-2 {
+    border-top: 2px dashed ;
+    border-color: #d1d5db;
+    margin: 16px 0;
+  }
