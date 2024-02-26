@@ -15,3 +15,9 @@
 .primary-bg{
     background-color: #1DD100;
 }
+
+hr.type-1 {
+    border-top: 1px dashed ;
+    border-color: #03071233;
+    margin: 20px 0;
+  }
