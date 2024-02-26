@@ -6,3 +6,12 @@
 .font-raleway{
     font-family: "Raleway", sans-serif;
 }
+
+/* shared */
+.primary-color{
+    color: #1DD100;
+}
+
+.primary-bg{
+    background-color: #1DD100;
+}
