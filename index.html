@@ -1,519 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK Ticket</title>
-    <!-- tailwind and daisy setup -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK Ticket</title>
+  <!-- tailwind and daisy setup -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="./styles/style.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body class="font-raleway ">
-<!-- header -->
-<header class="container mx-auto mt-7">
-<!-- navbar -->
-<div class="navbar bg-base-100">
-    <div class="flex-1">
-      <a class="btn btn-ghost text-4xl font-bold">SK Ticket</a>
-    </div>
-    <div class="flex-none">
-      <div class="flex justify-center items-center bg-[#1DD1001A] border-2 border-[#1DD10066] gap-2 py-4 px-8 rounded-[12px] hover:cursor-pointer">
-        <h3 class="text-xl font-bold text-[#1DD100]">Bus</h3>
-        <img src="./images/bus-icon.png" alt="">
+  <!-- header -->
+  <header class="container mx-auto mt-7">
+    <!-- navbar -->
+    <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-4xl font-bold">SK Ticket</a>
       </div>
-    </div>
-  </div>
-  <!-- banner -->
-  <div class="hero min-h-[70vh] mt-7 lg:rounded-[32px] overflow-hidden" style="background-image: url(./images/banner.png); background-repeat: no-repeat; ">
-    <div class="hero-overlay bg-opacity-20"></div>
-    <div class="hero-content text-center text-white">
-      <div class="max-w-4xl px-2">
-        <h1 class="mb-5 text-4xl lg:text-7xl font-bold lg:font-extrabold">End-to-End Travel with <span class="primary-color py-2">SK Paribahan</span></h1>
-        <p class="mb-8 text-lg">Enjoy hassle-free travel with SK Paribahan - from booking to destination.</p>
-        <a href="#ticket-main" class="btn btn-primary rounded-xl bg-[#1DD100] hover:bg-[#1DD100]/[.9] text-black border-0 text-xl font-bold px-8 py-4 h-full">Buy Tickets</a>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- main -->
-<main class="mt-14">
-  <!-- coupon -->
-  <section id="coupon" class="my-10 container mx-auto px-5 lg:px-0">
-    <h1 class="text-4xl font-semibold text-center">
-      Best Offers For You
-    </h1>
-    <!-- coupon container -->
-    <div id="coupon-container" class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12">
-      <!-- coupon 1 -->
-      <div class="bg-[#FFBF0F] grid grid-cols-8 "> 
-        <!-- left -->
-        <div class="col-span-4 flex flex-col items-start justify-center gap-1 lg:gap-3 p-6 lg:p-12">
-          <h1 class="font-extrabold text-2xl lg:text-4xl">15% OFF</h1>
-          <h3 class="font-semibold text-lg lg:text-xl">On Your Next Purchase</h3>
-          <p class="font-medium text-base lg:text-lg text-[#03071280]">Use by january 2024</p>
-        </div>
-        <!-- circles -->
-        <div class="relative flex flex-col  justify-between items-center" >
-          <div class="circle h-14 w-14 bg-white rounded-full -mt-8">
-          </div>
-          <div class="text-white flex flex-col  justify-center items-center pb-2">
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-          </div>
-          <div class="circle h-14 w-14 bg-white rounded-full -mb-8">
-          </div>
-        </div>
-        <!-- right -->
-        <div class="col-span-3 flex flex-col gap-3 items-center justify-center pr-6 lg:pr-12">
-          <h1 class="text-2xl lg:text-4xl font-bold">NEW15
-          </h1>
-          <p class="text-[#03071280] text-base lg:text-xl font-medium">Coupon Code</p>
-        </div>
-      </div>
-      <!-- coupon 2 -->
-      <div class="bg-[#F78C9C] grid grid-cols-8 "> 
-        <!-- left -->
-        <div class="col-span-4 flex flex-col items-start justify-center gap-1 lg:gap-3 p-6 lg:p-12">
-          <h1 class="font-extrabold text-2xl lg:text-4xl">20% OFF</h1>
-          <h3 class="font-semibold text-lg lg:text-xl">On Your Next Purchase</h3>
-          <p class="font-medium text-base lg:text-lg text-[#03071280]">Use by january 2024</p>
-        </div>
-        <!-- circles -->
-        <div class=" relative flex flex-col  justify-between items-center" >
-          <div class="circle h-14 w-14 bg-white rounded-full -mt-8">
-          </div>
-          <div class="text-white flex flex-col  justify-center items-center pb-2">
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-            <span class="font-extrabold text-2xl">.</span>
-          </div>
-          <div class="circle h-14 w-14 bg-white rounded-full -mb-8">
-          </div>
-        </div>
-        <!-- right -->
-        <div class="col-span-3 flex flex-col gap-3 items-center justify-center pr-6 lg:pr-12">
-          <h1 class="text-2xl lg:text-4xl font-bold">Couple 20</h1>
-          <p class="text-[#03071280] text-base lg:text-xl font-medium">Coupon Code</p>
+      <div class="flex-none">
+        <div
+          class="flex justify-center items-center bg-[#1DD1001A] border-2 border-[#1DD10066] gap-2 py-4 px-8 rounded-[12px] hover:cursor-pointer">
+          <h3 class="text-xl font-bold text-[#1DD100]">Bus</h3>
+          <img src="./images/bus-icon.png" alt="">
         </div>
       </div>
     </div>
-    <!-- btn -->
-    <div class="flex justify-center mt-16">
-      <button class="btn bg-white primary-color border-[#1DD100] text-xl font-semibold px-7 py-4 h-full hover:bg-white hover:font-bold hover:border-2 hover:border-[#1DD100]">
-        See All Offers
-      </button>
+    <!-- banner -->
+    <div class="hero min-h-[70vh] mt-7 lg:rounded-[32px] overflow-hidden"
+      style="background-image: url(./images/banner.png); background-repeat: no-repeat; ">
+      <div class="hero-overlay bg-opacity-20"></div>
+      <div class="hero-content text-center text-white">
+        <div class="max-w-4xl px-2">
+          <h1 class="mb-5 text-4xl lg:text-7xl font-bold lg:font-extrabold">End-to-End Travel with <span
+              class="primary-color py-2">SK Paribahan</span></h1>
+          <p class="mb-8 text-lg">Enjoy hassle-free travel with SK Paribahan - from booking to destination.</p>
+          <a href="#ticket-main"
+            class="btn btn-primary rounded-xl bg-[#1DD100] hover:bg-[#1DD100]/[.9] text-black border-0 text-xl font-bold px-8 py-4 h-full">Buy
+            Tickets</a>
+        </div>
+      </div>
     </div>
-  </section>
-  <!-- Ticket section -->
-  <section id="ticket-main" class="border-2 border-b-0 border-x-0  border-[#1DD100] rounded-t-[88px] py-16 lg:py-28 mt-20 lg:mt-28 bg-[#F7F8F8]">
-    <!-- ticket main -->
-    <div class="container mx-auto px-5 lg:px-0">
-      <!-- heading  -->
-      <div class="text-center max-w-[85vw] lg:max-w-[50vw] mx-auto">
+  </header>
+  <!-- main -->
+  <main class="mt-14">
+    <!-- coupon -->
+    <section id="coupon" class="my-10 container mx-auto px-5 lg:px-0">
+      <h1 class="text-4xl font-semibold text-center">
+        Best Offers For You
+      </h1>
+      <!-- coupon container -->
+      <div id="coupon-container" class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12">
+        <!-- coupon 1 -->
+        <div class="bg-[#FFBF0F] grid grid-cols-8 ">
+          <!-- left -->
+          <div class="col-span-4 flex flex-col items-start justify-center gap-1 lg:gap-3 p-6 lg:p-12">
+            <h1 class="font-extrabold text-2xl lg:text-4xl">15% OFF</h1>
+            <h3 class="font-semibold text-lg lg:text-xl">On Your Next Purchase</h3>
+            <p class="font-medium text-base lg:text-lg text-[#03071280]">Use by january 2024</p>
+          </div>
+          <!-- circles -->
+          <div class="relative flex flex-col  justify-between items-center">
+            <div class="circle h-14 w-14 bg-white rounded-full -mt-8">
+            </div>
+            <div class="text-white flex flex-col  justify-center items-center pb-2">
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+            </div>
+            <div class="circle h-14 w-14 bg-white rounded-full -mb-8">
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-span-3 flex flex-col gap-3 items-center justify-center pr-6 lg:pr-12">
+            <h1 class="text-2xl lg:text-4xl font-bold">NEW15
+            </h1>
+            <p class="text-[#03071280] text-base lg:text-xl font-medium">Coupon Code</p>
+          </div>
+        </div>
+        <!-- coupon 2 -->
+        <div class="bg-[#F78C9C] grid grid-cols-8 ">
+          <!-- left -->
+          <div class="col-span-4 flex flex-col items-start justify-center gap-1 lg:gap-3 p-6 lg:p-12">
+            <h1 class="font-extrabold text-2xl lg:text-4xl">20% OFF</h1>
+            <h3 class="font-semibold text-lg lg:text-xl">On Your Next Purchase</h3>
+            <p class="font-medium text-base lg:text-lg text-[#03071280]">Use by january 2024</p>
+          </div>
+          <!-- circles -->
+          <div class=" relative flex flex-col  justify-between items-center">
+            <div class="circle h-14 w-14 bg-white rounded-full -mt-8">
+            </div>
+            <div class="text-white flex flex-col  justify-center items-center pb-2">
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+              <span class="font-extrabold text-2xl">.</span>
+            </div>
+            <div class="circle h-14 w-14 bg-white rounded-full -mb-8">
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-span-3 flex flex-col gap-3 items-center justify-center pr-6 lg:pr-12">
+            <h1 class="text-2xl lg:text-4xl font-bold">Couple 20</h1>
+            <p class="text-[#03071280] text-base lg:text-xl font-medium">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <!-- btn -->
+      <div class="flex justify-center mt-16">
+        <button
+          class="btn bg-white primary-color border-[#1DD100] text-xl font-semibold px-7 py-4 h-full hover:bg-white hover:font-bold hover:border-2 hover:border-[#1DD100]">
+          See All Offers
+        </button>
+      </div>
+    </section>
+    <!-- Ticket section -->
+    <section id="ticket-main"
+      class="border-2 border-b-0 border-x-0  border-[#1DD100] rounded-t-[88px] py-16 lg:py-28 mt-20 lg:mt-28 bg-[#F7F8F8]">
+      <!-- ticket main -->
+      <div class="container mx-auto px-5 lg:px-0">
+        <!-- heading  -->
+        <div class="text-center max-w-[85vw] lg:max-w-[50vw] mx-auto">
           <h1 class="font-bold text-4xl mb-6">SK Paribahan</h1>
-          <p class="text-[#03071299] text-lg">Enjoy hassle-free travel with SK Paribahan. From booking to destination, experience seamless service that prioritizes convenience, comfort, and reliability. Make every trip memorable with us.</p>
-      </div>
-      <!-- ticket details section-->
-      <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 mt-8 bg-white rounded-3xl p-8 gap-1">
-        <!-- ticket details -->
-        <div class="col-span-9 ">
-          <!-- details heading -->
-          <div class="flex flex-col lg:flex-row justify-between items-center">
-            <!-- text-content -->
-            <div class="flex items-center gap-4">
-              <!-- img -->
-              <img src="./images/bus-logo.png" alt="">
-              <!-- text -->
-              <div class="flex flex-col gap-1">
-                <h1 class="text-3xl font-bold">
-                  SK Paribahan
-                </h1>
-                <p class="text-[#03071299] text-lg">
-                  Coach-009-WEB ! AC_Business
-                </p>
+          <p class="text-[#03071299] text-lg">Enjoy hassle-free travel with SK Paribahan. From booking to destination,
+            experience seamless service that prioritizes convenience, comfort, and reliability. Make every trip
+            memorable with us.</p>
+        </div>
+        <!-- ticket details section-->
+        <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 mt-8 bg-white rounded-3xl p-8 gap-1">
+          <!-- ticket details -->
+          <div class="col-span-9 ">
+            <!-- details heading -->
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+              <!-- text-content -->
+              <div class="flex items-center gap-4">
+                <!-- img -->
+                <img src="./images/bus-logo.png" alt="">
+                <!-- text -->
+                <div class="flex flex-col gap-1">
+                  <h1 class="text-3xl font-bold">
+                    SK Paribahan
+                  </h1>
+                  <p class="text-[#03071299] text-lg">
+                    Coach-009-WEB ! AC_Business
+                  </p>
+                </div>
+              </div>
+              <!-- btn -->
+              <div class="bg-[#1DD10026] text-[#1DD100] flex gap-4 items-center px-4 py-3 mt-6 lg:mt-0">
+                <img src="./images/seat-green.png" alt="">
+                <div class="flex gap-2 items-center text-lg font-semibold">
+                  <span id="seat-count" class="text-xl mb-1">40</span>
+                  <p>Seats Left</p>
+                </div>
               </div>
             </div>
-            <!-- btn -->
-            <div class="bg-[#1DD10026] text-[#1DD100] flex gap-4 items-center px-4 py-3 mt-6 lg:mt-0">
-              <img src="./images/seat-green.png" alt="">
-              <div class="flex gap-2 items-center text-lg font-semibold">
-                <span id="seat-count" class="text-xl mb-1">40</span>
-                <p>Seats Left</p>
+            <!-- details/description -->
+            <div class="bg-[#F7F8F8] p-8 mt-6">
+              <!-- line 1 -->
+              <div class="flex justify-between">
+                <h3 class="text-lg font-semibold text-[#03071299]">Route</h3>
+                <h1 class="text-lg font-semibold">Dhaka - Sylhet </h1>
+              </div>
+              <hr class="type-1">
+              <!-- line 2 -->
+              <div class="flex justify-between">
+                <h3 class="text-lg font-semibold text-[#03071299]">Departure Time</h3>
+                <h1 class="text-lg font-semibold">9:00 PM</h1>
+              </div>
+              <hr class="type-1">
+              <!-- line 3 -->
+              <div class="flex flex-col lg:flex-row justify-between gap-2 lg:gap-0">
+                <p class="font-medium bg-[#0307120D] px-5 py-3 rounded-xl">Boarding Point - Laxmipur</p>
+                <p class="font-medium bg-[#0307120D] px-5 py-3 rounded-xl">Dropping Point - Bogura</p>
+                <p class="font-medium bg-[#0307120D] px-5 py-3 rounded-xl">Est. Time - 11 Hour</p>
               </div>
             </div>
           </div>
-          <!-- details/description -->
-          <div class="bg-[#F7F8F8] p-8 mt-6">
-            <!-- line 1 -->
-            <div class="flex justify-between">
-              <h3 class="text-lg font-semibold text-[#03071299]">Route</h3>
-              <h1 class="text-lg font-semibold">Dhaka - Sylhet </h1>
+          <!-- divider/style -->
+          <div class="hidden lg:block">
+            <div class=" relative flex flex-col  justify-between items-center">
+
+              <div class="text-green-400 flex flex-col  justify-center items-center pb-2">
+
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+                <span class="font-extrabold text-2xl">.</span>
+
+              </div>
+
             </div>
-            <hr class="type-1">
-            <!-- line 2 -->
-            <div class="flex justify-between">
-              <h3 class="text-lg font-semibold text-[#03071299]">Departure Time</h3>
-              <h1 class="text-lg font-semibold">9:00 PM</h1>
-            </div>
-            <hr class="type-1">
-            <!-- line 3 -->
-            <div class="flex flex-col lg:flex-row justify-between gap-2 lg:gap-0">
-              <p class="font-medium bg-[#0307120D] px-5 py-3 rounded-xl">Boarding Point - Laxmipur</p>
-              <p class="font-medium bg-[#0307120D] px-5 py-3 rounded-xl">Dropping Point - Bogura</p>
-              <p class="font-medium bg-[#0307120D] px-5 py-3 rounded-xl">Est. Time - 11 Hour</p>
-            </div>
+          </div>
+          <!-- ticket price -->
+          <div class="lg:col-span-2 flex flex-col justify-center items-center pl-10 lg:pl-0 lg:pr-9 pt-2 lg:pt-0">
+            <img class="border-2 border-dashed border-gray-300 mb-6" src="./images/fare.png" alt="">
+            <p class="text-3xl font-bold font-sans mb-2">550 Taka</p>
+            <p class="text-[#03071299] text-2xl font-bold">Per Seat</p>
           </div>
         </div>
-        <!-- divider/style -->
-        <div class="hidden lg:block">
-          <div class=" relative flex flex-col  justify-between items-center" >
-           
-            <div class="text-green-400 flex flex-col  justify-center items-center pb-2">
-              
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              <span class="font-extrabold text-2xl">.</span>
-              
-            </div>
-            
-          </div>
-        </div>
-        <!-- ticket price -->
-        <div class="lg:col-span-2 flex flex-col justify-center items-center pl-10 lg:pl-0 lg:pr-9 pt-2 lg:pt-0">
-          <img class="border-2 border-dashed border-gray-300 mb-6" src="./images/fare.png" alt="">
-          <p class="text-3xl font-bold font-sans mb-2">550 Taka</p>
-          <p class="text-[#03071299] text-2xl font-bold">Per Seat</p>
-        </div>
-      </div>
-      <!-- seat selection section -->
-      <div class="bg-white grid grid-cols-1 lg:grid-cols-12 p-8 max-w-[1280px] mx-auto mt-10 rounded-xl ">
-        <!-- select seat -->
-        <div class="col-span-7 border-r-2 border-dashed border-gray-300 pr-3">
-          <!-- heading -->
-          <h1 class="text-2xl font-semibold">Select Your Seat</h1>
-          <hr class="type-2">
-          <div class="flex justify-between text-lg font-medium">
-            <div class="flex items-center gap-2">
-              <img src="./images/seat-gray.png" alt="">
-              <p class="text-[#03071280]">Available</p>
-            </div>
-            <div class="flex items-center gap-2 primary-color">
-              <img src="./images/seat-green.png" alt="">
-              <p class="font-semibold">Selected</p>
-            </div>
-          </div>
-          <hr class="type-2">
-          <!-- main selection -->
-          <!-- logo -->
-          <div class="flex items-end justify-end px-11 py-4 rounded-xl">
-            <svg width="26.000000" height="26.000000" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <desc>
-                  Created with Pixso.
-              </desc>
-              <defs/>
-              <path id="Vector" d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333" stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-            </svg>
-            
-          </div>
-          <!-- selection A -->
-          <div class="grid grid-cols-10 gap-4 ">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">A</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('A1')" id="A1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('A2')" id="A2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('A3')" id="A3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('A4')" id="A4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A4</button>
-            </div>
-
-          </div>
-          <!-- selection B -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">B</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('B1')" id="B1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('B2')" id="B2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('B3')" id="B3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('B4')" id="B4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B4</button>
-            </div>
-
-          </div>
-          <!-- selection C -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">C</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('C1')" id="C1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('C2')" id="C2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('C3')" id="C3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('C4')" id="C4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C4</button>
-            </div>
-
-          </div>
-          <!-- selection D -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">D</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('D1')" id="D1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('D2')" id="D2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('D3')" id="D3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('D4')" id="D4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D4</button>
-            </div>
-
-          </div>
-          <!-- selection E -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">E</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('E1')" id="E1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('E2')" id="E2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('E3')" id="E3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('E4')" id="E4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E4</button>
-            </div>
-
-          </div>
-          <!-- selection F -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">F</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('F1')" id="F1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('F2')" id="F2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('F3')" id="F3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('F4')" id="F4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F4</button>
-            </div>
-
-          </div>
-          <!-- selection G -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">G</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('G1')" id="G1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('G2')" id="G2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('G3')" id="G3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('G4')" id="G4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G4</button>
-            </div>
-
-          </div>
-          <!-- selection H -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">H</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('H1')" id="H1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('H2')" id="H2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('H3')" id="H3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('H4')" id="H4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H4</button>
-            </div>
-
-          </div>
-          <!-- selection I -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">I</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('I1')" id="I1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('I2')" id="I2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('I3')" id="I3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('I4')" id="I4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I4</button>
-            </div>
-
-          </div>
-          <!-- selection J -->
-          <div class="grid grid-cols-10 gap-4 mt-5">
-            <div class="col-span-1">
-              <button class="mt-3 text-[#03071280] text-lg font-medium">J</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('J1')" id="J1" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J1</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('J2')" id="J2" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J2</button>
-            </div>
-            <div class="col-span-1">
-
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('J3')" id="J3" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J3</button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="selected('J4')" id="J4" class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J4</button>
-            </div>
-
-          </div>
-        </div>
-        <!-- selected seat details -->
-        <div class="col-span-5 pl-0 lg:pl-5 ">
-          <h1 class="text-2xl font-semibold">Select Your Seat</h1>
-          <hr class="type-2">
-
-          <!-- invoice section  -->
-          <div class="bg-[#F7F8F8] rounded-xl p-8">
+        <!-- seat selection section -->
+        <div class="bg-white grid grid-cols-1 lg:grid-cols-12 p-8 max-w-[1280px] mx-auto mt-10 rounded-xl ">
+          <!-- select seat -->
+          <div class="col-span-7 border-r-2 border-dashed border-gray-300 pr-3">
             <!-- heading -->
-            <div class="grid grid-cols-3">
-              <h1 class="font-medium">
-                Seat 
-                <span  id="showCount" class="bg-[#1DD100] rounded-2xl px-3 py-1 h-full text-white"></span>
-              </h1>
-              <h1 class="font-medium text-center">Class</h1>
-              <h1 class="font-medium text-end">Price</h1>
+            <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+            <hr class="type-2">
+            <div class="flex justify-between text-lg font-medium">
+              <div class="flex items-center gap-2">
+                <img src="./images/seat-gray.png" alt="">
+                <p class="text-[#03071280]">Available</p>
+              </div>
+              <div class="flex items-center gap-2 primary-color">
+                <img src="./images/seat-green.png" alt="">
+                <p class="font-semibold">Selected</p>
+              </div>
             </div>
             <hr class="type-2">
-            <!-- list -->
-            <div id="invoice-list" class="grid grid-cols-3 text-[#03071299] font-sans">
-              <h1 id="seat-name" class="">
-                
-              </h1>
-              <h1 id="seat-class" class=" text-center"></h1>
-              <h1 id="seat-price" class=" text-end"></h1>
-            </div>
-            <hr class="hr-normal">
-            <!-- total and discount price  section-->
-            <div id="price-section" class="grid grid-cols-2 font-sans font-medium">
-              <h1 >Total Price</h1>
-              <h1 class="text-end">BDT <span id="total-price">0</span></h1>
-            </div>
-            <!-- coupon -->
-            <div id="coupon-div" class="join w-full mt-6 mb-4">
-              <input id="input-field" class="input input-bordered join-item w-full" placeholder="Have Any Coupon?"/>
-              <button id="coupon-btn" onclick="couponApply()" class="btn join-item bg-[#1DD100]" disabled>Apply</button>
-            </div>
-            <!-- grand Total section -->
-            <div id="price-section" class="flex justify-between font-sans font-medium">
-              <h1>Grand Total</h1>
-              <h1>BDT <span id="grand-price">0</span></h1>
-            </div>
-            
-          </div>
-          <!-- form section -->
-          <div class="p-8 mt-2 font-sans">
-            <label for="name" class="font-semibold ">Passenger Name *</label>
-            <input type="text" placeholder="Enter Your Name" class="p-5 border w-full rounded-xl mt-3 mb-3" >
-            
-            <label for="name" class="font-semibold font-sans">Phone Number *</label>
-            <input type="number" placeholder="Enter Your Phone Number" class="p-5 border w-full rounded-xl mt-3 mb-3" >
-            
-            <label for="name" class="font-semibold font-sans">Email ID </label>
-            <input type="email" placeholder="Enter Your Email ID" class="p-5 border w-full rounded-xl mt-3 mb-6" >
+            <!-- main selection -->
+            <!-- logo -->
+            <div class="flex items-end justify-end px-11 py-4 rounded-xl">
+              <svg width="26.000000" height="26.000000" viewBox="0 0 26 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                  Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Vector"
+                  d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333"
+                  stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000" stroke-linejoin="round"
+                  stroke-linecap="round" />
+              </svg>
 
-            <button class="w-full h-full text-white bg-[#1DD100] hover:bg-[#1DD100]/[.9] rounded-xl py-4 text-xl font-bold">Next</button>
+            </div>
+            <!-- selection A -->
+            <div class="grid grid-cols-10 gap-4 ">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">A</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('A1')" id="A1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('A2')" id="A2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('A3')" id="A3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('A4')" id="A4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">A4</button>
+              </div>
+
+            </div>
+            <!-- selection B -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">B</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('B1')" id="B1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('B2')" id="B2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('B3')" id="B3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('B4')" id="B4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">B4</button>
+              </div>
+
+            </div>
+            <!-- selection C -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">C</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('C1')" id="C1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('C2')" id="C2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('C3')" id="C3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('C4')" id="C4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">C4</button>
+              </div>
+
+            </div>
+            <!-- selection D -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">D</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('D1')" id="D1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('D2')" id="D2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('D3')" id="D3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('D4')" id="D4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">D4</button>
+              </div>
+
+            </div>
+            <!-- selection E -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">E</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('E1')" id="E1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('E2')" id="E2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('E3')" id="E3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('E4')" id="E4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">E4</button>
+              </div>
+
+            </div>
+            <!-- selection F -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">F</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('F1')" id="F1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('F2')" id="F2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('F3')" id="F3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('F4')" id="F4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">F4</button>
+              </div>
+
+            </div>
+            <!-- selection G -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">G</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('G1')" id="G1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('G2')" id="G2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('G3')" id="G3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('G4')" id="G4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">G4</button>
+              </div>
+
+            </div>
+            <!-- selection H -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">H</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('H1')" id="H1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('H2')" id="H2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('H3')" id="H3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('H4')" id="H4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">H4</button>
+              </div>
+
+            </div>
+            <!-- selection I -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">I</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('I1')" id="I1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('I2')" id="I2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('I3')" id="I3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('I4')" id="I4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">I4</button>
+              </div>
+
+            </div>
+            <!-- selection J -->
+            <div class="grid grid-cols-10 gap-4 mt-5">
+              <div class="col-span-1">
+                <button class="mt-3 text-[#03071280] text-lg font-medium">J</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('J1')" id="J1"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J1</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('J2')" id="J2"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J2</button>
+              </div>
+              <div class="col-span-1">
+
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('J3')" id="J3"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J3</button>
+              </div>
+              <div class="col-span-2">
+                <button onclick="selected('J4')" id="J4"
+                  class="btn bg-[#F7F8F8] w-full text-[#03071280] text-lg font-medium font-sans">J4</button>
+              </div>
+
+            </div>
+          </div>
+          <!-- selected seat details -->
+          <div class="col-span-5 pl-0 lg:pl-5 ">
+            <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+            <hr class="type-2">
+
+            <!-- invoice section  -->
+            <div class="bg-[#F7F8F8] rounded-xl p-8">
+              <!-- heading -->
+              <div class="grid grid-cols-3">
+                <h1 class="font-medium">
+                  Seat
+                  <span id="showCount" class="bg-[#1DD100] rounded-2xl px-3 py-1 h-full text-white"></span>
+                </h1>
+                <h1 class="font-medium text-center">Class</h1>
+                <h1 class="font-medium text-end">Price</h1>
+              </div>
+              <hr class="type-2">
+              <!-- list -->
+              <div id="invoice-list" class="grid grid-cols-3 text-[#03071299] font-sans">
+                <h1 id="seat-name" class="">
+
+                </h1>
+                <h1 id="seat-class" class=" text-center"></h1>
+                <h1 id="seat-price" class=" text-end"></h1>
+              </div>
+              <hr class="hr-normal">
+              <!-- total and discount price  section-->
+              <div id="price-section" class="grid grid-cols-2 font-sans font-medium">
+                <h1>Total Price</h1>
+                <h1 class="text-end">BDT <span id="total-price">0</span></h1>
+              </div>
+              <!-- coupon -->
+              <div id="coupon-div" class="join w-full mt-6 mb-4">
+                <input id="input-field" class="input input-bordered join-item w-full" placeholder="Have Any Coupon?" />
+                <button id="coupon-btn" onclick="couponApply()" class="btn join-item bg-[#1DD100]"
+                  disabled>Apply</button>
+              </div>
+              <!-- grand Total section -->
+              <div id="price-section" class="flex justify-between font-sans font-medium">
+                <h1>Grand Total</h1>
+                <h1>BDT <span id="grand-price">0</span></h1>
+              </div>
+
+            </div>
+            <!-- form section -->
+            <div class="p-8 mt-2 font-sans">
+              <label for="name" class="font-semibold ">Passenger Name *</label>
+              <input type="text" placeholder="Enter Your Name" class="p-5 border w-full rounded-xl mt-3 mb-3">
+
+              <label for="name" class="font-semibold font-sans">Phone Number *</label>
+              <input type="number" placeholder="Enter Your Phone Number" class="p-5 border w-full rounded-xl mt-3 mb-3">
+
+              <label for="name" class="font-semibold font-sans">Email ID </label>
+              <input type="email" placeholder="Enter Your Email ID" class="p-5 border w-full rounded-xl mt-3 mb-6">
+
+              <button
+              onclick="my_modal_5.showModal()"
+                class="w-full h-full text-white bg-[#1DD100] hover:bg-[#1DD100]/[.9] rounded-xl py-4 text-xl font-bold">Next</button>
+              <!-- modal -->
+              <!-- Open the modal using ID.showModal() method -->
+              
+              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box flex flex-col justify-center items-center py-12 px-16">
+                  <img src="./images/success.png" alt="">
+                  <h3 class="font-bold text-2xl mt-9 text-[#27AE60]">SUCCESS</h3>
+                  <h3 class="font-bold text-lg mt-9 text-center">Thank you for Booking Our Bus Seats.</h3>
+                  <h3 class="font-bold text-lg mt-1 text-center">We are working hard to find the best service and deals for you. </h3>
+                  <p class="py-4">Shortly you will find a confirmation in your email.</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn text-xl font-semibold text-white bg-[#27AE60] px-20 py-4 rounded-3xl h-full hover:bg-[#27AE60]/[.8]">Continue</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
-<script src="./scripts/script.js"></script>
+    </section>
+  </main>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
