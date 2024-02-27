@@ -5,6 +5,14 @@ function selectedCount (){
     count ++;
 }
 
+// show count for invoice
+function showSelectedCount (){
+    let Show = document.getElementById('showCount')
+    Show.innerText = count;
+}
+showSelectedCount();
+
+
 // total price
 function totalPrice () {
     total = total + 550;
@@ -23,8 +31,33 @@ function selected(seatNo) {
     btn.classList.add('bg-green-400')
     btn.setAttribute('onclick', '');
     // counting 
-    
     selectedCount()
     totalPrice()
+    showSelectedCount()
     console.log(count,total)
 }
+
+
+// coupon Apply
+// function couponApply () {
+//     let inputField = document.getElementById('input-field')
+//     let inputFieldText = inputField.value;
+//     console.log(inputFieldText)
+//     if(inputFieldText === 'Couple 20' || inputFieldText)
+// }
+
+document.getElementById('input-field').addEventListener('keyup', function(){
+    let inputField = document.getElementById('input-field')
+    let inputFieldText = inputField.value;
+    console.log(inputFieldText)
+
+    // btn
+    const btn = document.getElementById('coupon-btn')
+    if(inputFieldText === 'Couple 20' || inputFieldText === 'NEW15'){
+        if(count == 4){
+            btn.removeAttribute('disabled')
+        }
+    }else{
+        btn.setAttribute('disabled', true)
+    }
+})
