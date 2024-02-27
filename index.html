@@ -475,23 +475,28 @@
             </div>
             <hr class="type-2">
             <!-- list -->
-            <div class="grid grid-cols-3 text-[#03071299] font-sans">
-              <h1 class="">
-                C2
+            <div id="invoice-list" class="grid grid-cols-3 text-[#03071299] font-sans">
+              <h1 id="seat-name" class="">
+                
               </h1>
-              <h1 class=" text-center">Economy</h1>
-              <h1 class=" text-end">550</h1>
+              <h1 id="seat-class" class=" text-center"></h1>
+              <h1 id="seat-price" class=" text-end"></h1>
             </div>
             <hr class="hr-normal">
-            <!-- total price -->
-            <div class="flex justify-between font-sans font-medium">
-              <h1>Total Price</h1>
-              <h1>BDT <span id="total-price">550</span></h1>
+            <!-- total and discount price  section-->
+            <div id="price-section" class="grid grid-cols-2 font-sans font-medium">
+              <h1 >Total Price</h1>
+              <h1 class="text-end">BDT <span id="total-price">0</span></h1>
             </div>
             <!-- coupon -->
             <div class="join w-full mt-6">
               <input id="input-field" class="input input-bordered join-item w-full" placeholder="Have Any Coupon?"/>
-              <button id="coupon-btn" onclick="couponApply()" class="btn join-item " disabled>Apply</button>
+              <button id="coupon-btn" onclick="couponApply()" class="btn join-item bg-[#1DD100]" disabled>Apply</button>
+            </div>
+            <!-- grand Total section -->
+            <div id="price-section" class="flex justify-between font-sans font-medium mt-6">
+              <h1>Grand Total</h1>
+              <h1>BDT <span id="grand-price">0</span></h1>
             </div>
           </div>
         </div>
