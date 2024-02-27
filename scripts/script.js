@@ -28,38 +28,38 @@ function discountPrice(percent) {
   discount = (total * (percent / 100)).toFixed(2);
   grandTotal = (total - discount).toFixed(2);
 
-//   update values
+  //   update values
 
-//   show grand total
-let grandTotalValue = document.getElementById('grand-price')
-grandTotalValue.innerText = grandTotal;
+  //   show grand total
+  let grandTotalValue = document.getElementById("grand-price");
+  grandTotalValue.innerText = grandTotal;
 
-// show discount
-let showDiscountPrice = document.getElementById('price-section')
-let discountTextH1 = document.createElement('h1')
-discountTextH1.innerText= 'Total Discount'
+  // show discount
+  let showDiscountPrice = document.getElementById("price-section");
+  let discountTextH1 = document.createElement("h1");
+  discountTextH1.innerText = "Total Discount";
 
-let h1 = document.createElement('h1')
-h1.innerText = 'BDT '
-h1.classList.add('text-end')
+  let h1 = document.createElement("h1");
+  h1.innerText = "BDT ";
+  h1.classList.add("text-end");
 
-// crete span
-let span = document.createElement('span')
-span.innerText = discount;
+  // crete span
+  let span = document.createElement("span");
+  span.innerText = discount;
 
-// append
-h1.appendChild(span)
+  // append
+  h1.appendChild(span);
 
-showDiscountPrice.appendChild(discountTextH1)
-showDiscountPrice.appendChild(h1)
+  showDiscountPrice.appendChild(discountTextH1);
+  showDiscountPrice.appendChild(h1);
 
   console.log("discount is " + discount + "Grand total is " + grandTotal);
 
-//   disable apply btn
-let hide = document.getElementById('coupon-div')
-hide.classList.add('hidden')
-// btn_disable.disabled = true;
-// btn_disable.removeAttribute('onclick');
+  //   disable apply btn
+  let hide = document.getElementById("coupon-div");
+  hide.classList.add("hidden");
+  // btn_disable.disabled = true;
+  // btn_disable.removeAttribute('onclick');
 }
 
 function selected(seatNo) {
@@ -106,9 +106,9 @@ function selected(seatNo) {
   // show total price
   let totalPriceValue = document.getElementById("total-price");
   totalPriceValue.innerText = total;
-//   show grand total
-let grandTotalValue = document.getElementById('grand-price')
-grandTotalValue.innerText = grandTotal;
+  //   show grand total
+  let grandTotalValue = document.getElementById("grand-price");
+  grandTotalValue.innerText = grandTotal;
 }
 
 // coupon Apply

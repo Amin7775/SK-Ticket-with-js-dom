@@ -1,33 +1,32 @@
 /* google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-.font-raleway{
-    font-family: "Raleway", sans-serif;
+.font-raleway {
+  font-family: "Raleway", sans-serif;
 }
 
 /* shared */
-.primary-color{
-    color: #1DD100;
+.primary-color {
+  color: #1dd100;
 }
 
-.primary-bg{
-    background-color: #1DD100;
+.primary-bg {
+  background-color: #1dd100;
 }
 
 hr.type-1 {
-    border-top: 1px dashed ;
-    border-color: #03071233;
-    margin: 20px 0;
-  }
+  border-top: 1px dashed;
+  border-color: #03071233;
+  margin: 20px 0;
+}
 hr.type-2 {
-    border-top: 2px dashed ;
-    border-color: #d1d5db;
-    margin: 16px 0;
-  }
+  border-top: 2px dashed;
+  border-color: #d1d5db;
+  margin: 16px 0;
+}
 .hr-normal {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-color: #03071233;
-  }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #03071233;
+}
