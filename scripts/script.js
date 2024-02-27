@@ -56,9 +56,10 @@ showDiscountPrice.appendChild(h1)
   console.log("discount is " + discount + "Grand total is " + grandTotal);
 
 //   disable apply btn
-let btn_disable = document.getElementById('coupon-btn')
-btn_disable.disabled = true;
-btn_disable.removeAttribute('onclick');
+let hide = document.getElementById('coupon-div')
+hide.classList.add('hidden')
+// btn_disable.disabled = true;
+// btn_disable.removeAttribute('onclick');
 }
 
 function selected(seatNo) {

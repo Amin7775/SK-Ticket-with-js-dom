@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-
 <body class="font-raleway ">
 <!-- header -->
 <header class="container mx-auto mt-7">
@@ -40,7 +38,6 @@
     </div>
   </div>
 </header>
-
 <!-- main -->
 <main class="mt-14">
   <!-- coupon -->
@@ -59,7 +56,7 @@
           <p class="font-medium text-base lg:text-lg text-[#03071280]">Use by january 2024</p>
         </div>
         <!-- circles -->
-        <div class=" relative flex flex-col  justify-between items-center" >
+        <div class="relative flex flex-col  justify-between items-center" >
           <div class="circle h-14 w-14 bg-white rounded-full -mt-8">
           </div>
           <div class="text-white flex flex-col  justify-center items-center pb-2">
@@ -103,8 +100,7 @@
         </div>
         <!-- right -->
         <div class="col-span-3 flex flex-col gap-3 items-center justify-center pr-6 lg:pr-12">
-          <h1 class="text-2xl lg:text-4xl font-bold">Couple 20
-          </h1>
+          <h1 class="text-2xl lg:text-4xl font-bold">Couple 20</h1>
           <p class="text-[#03071280] text-base lg:text-xl font-medium">Coupon Code</p>
         </div>
       </div>
@@ -116,9 +112,8 @@
       </button>
     </div>
   </section>
-
   <!-- Ticket section -->
-  <section id="ticket-main" class="border-2 border-b-0 border-x-0  border-[#1DD100] rounded-t-[88px] py-16 lg:py-28 my-20 lg:my-28 bg-[#F7F8F8]">
+  <section id="ticket-main" class="border-2 border-b-0 border-x-0  border-[#1DD100] rounded-t-[88px] py-16 lg:py-28 mt-20 lg:mt-28 bg-[#F7F8F8]">
     <!-- ticket main -->
     <div class="container mx-auto px-5 lg:px-0">
       <!-- heading  -->
@@ -151,7 +146,7 @@
               <img src="./images/seat-green.png" alt="">
               <div class="flex gap-2 items-center text-lg font-semibold">
                 <span id="seat-count" class="text-xl mb-1">40</span>
-                <p> Seats Left</p>
+                <p>Seats Left</p>
               </div>
             </div>
           </div>
@@ -168,7 +163,7 @@
               <h3 class="text-lg font-semibold text-[#03071299]">Departure Time</h3>
               <h1 class="text-lg font-semibold">9:00 PM</h1>
             </div>
-            <hr class="type-1 ">
+            <hr class="type-1">
             <!-- line 3 -->
             <div class="flex flex-col lg:flex-row justify-between gap-2 lg:gap-0">
               <p class="font-medium bg-[#0307120D] px-5 py-3 rounded-xl">Boarding Point - Laxmipur</p>
@@ -237,7 +232,7 @@
             
           </div>
           <!-- selection A -->
-          <div class="grid grid-cols-10   gap-4 ">
+          <div class="grid grid-cols-10 gap-4 ">
             <div class="col-span-1">
               <button class="mt-3 text-[#03071280] text-lg font-medium">A</button>
             </div>
@@ -458,7 +453,7 @@
           </div>
         </div>
         <!-- selected seat details -->
-        <div class="col-span-5 pl-5">
+        <div class="col-span-5 pl-0 lg:pl-5 ">
           <h1 class="text-2xl font-semibold">Select Your Seat</h1>
           <hr class="type-2">
 
@@ -489,21 +484,34 @@
               <h1 class="text-end">BDT <span id="total-price">0</span></h1>
             </div>
             <!-- coupon -->
-            <div class="join w-full mt-6">
+            <div id="coupon-div" class="join w-full mt-6 mb-4">
               <input id="input-field" class="input input-bordered join-item w-full" placeholder="Have Any Coupon?"/>
               <button id="coupon-btn" onclick="couponApply()" class="btn join-item bg-[#1DD100]" disabled>Apply</button>
             </div>
             <!-- grand Total section -->
-            <div id="price-section" class="flex justify-between font-sans font-medium mt-6">
+            <div id="price-section" class="flex justify-between font-sans font-medium">
               <h1>Grand Total</h1>
               <h1>BDT <span id="grand-price">0</span></h1>
             </div>
+            
+          </div>
+          <!-- form section -->
+          <div class="p-8 mt-2 font-sans">
+            <label for="name" class="font-semibold ">Passenger Name *</label>
+            <input type="text" placeholder="Enter Your Name" class="p-5 border w-full rounded-xl mt-3 mb-3" >
+            
+            <label for="name" class="font-semibold font-sans">Phone Number *</label>
+            <input type="number" placeholder="Enter Your Phone Number" class="p-5 border w-full rounded-xl mt-3 mb-3" >
+            
+            <label for="name" class="font-semibold font-sans">Email ID </label>
+            <input type="email" placeholder="Enter Your Email ID" class="p-5 border w-full rounded-xl mt-3 mb-6" >
+
+            <button class="w-full h-full text-white bg-[#1DD100] hover:bg-[#1DD100]/[.9] rounded-xl py-4 text-xl font-bold">Next</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 </main>
 <script src="./scripts/script.js"></script>
 </body>
