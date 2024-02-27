@@ -1,7 +1,10 @@
 let count = 0;
 let total = 0;
+let totalSeats = 40;
+let discount = 0;
 // count selected seats
 function selectedCount (){
+    totalSeats --;
     count ++;
 }
 
@@ -34,6 +37,9 @@ function selected(seatNo) {
     selectedCount()
     totalPrice()
     showSelectedCount()
+    // update total seats available
+    let availableSeats = document.getElementById('seat-count')
+    availableSeats.innerText= totalSeats;
     console.log(count,total)
 }
 
